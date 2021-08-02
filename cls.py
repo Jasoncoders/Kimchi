@@ -37,13 +37,9 @@ class Number:
         
     def __div__(self, other):
         if self.value < other.value:
-            return other.value / self.value
+            return other.value // self.value
         elif self.value > other.value:
-            return self.value / other.value
+            return self.value // other.value
         else:
             return 1
-
-num1 = Number(12)
-num2 = Number(4)
-
-print(num1 - num2)
+            
